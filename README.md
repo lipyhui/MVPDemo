@@ -1,2 +1,2 @@
-# MVPDemo
-模板，包括MVP、dataBinding、realm、kotlin、rxjava等
+# Oxygenerator
+制氧舱工业平板样例
