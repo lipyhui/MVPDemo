@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:background="@android:color/white"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+     <com.kawakp.kp.oxygenerator.widget.WheelView
+         android:id="@+id/integer1"
+         android:layout_width="wrap_content"
+         android:layout_weight="2"
+         android:layout_height="wrap_content" />
+
+     <com.kawakp.kp.oxygenerator.widget.WheelView
+         android:id="@+id/integer"
+         android:layout_width="wrap_content"
+         android:layout_weight="1"
+         android:layout_height="wrap_content" />
+
+     <com.kawakp.kp.oxygenerator.widget.WheelView
+         android:id="@+id/decimal"
+         android:layout_width="wrap_content"
+         android:layout_weight="1"
+         android:layout_height="wrap_content" />
+
+     <com.kawakp.kp.oxygenerator.widget.WheelView
+         android:id="@+id/decimal2"
+         android:layout_width="wrap_content"
+         android:layout_weight="2"
+         android:layout_height="wrap_content" />
+     
+</LinearLayout>

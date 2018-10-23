@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="start">#eae9e9</color>
+
+    <color name="test">#eae9e9</color>
+
+    <color name="colorWhite">#ffffff</color>
+
+    <!-- 登录 -->
+    <color name="colorLogin">#fdfffc</color>
+    <color name="colorLoginPrompt">#d4d4d4</color>
+    <color name="colorLoginInput">#3b3b3b</color>
+
+    <!-- 主界面侧边栏 -->
+    <color name="colorMainFontSelected">#a1a2a7</color>
+    <color name="colorMainFontSelect">#5c646e</color>
+    <color name="colorMainBg">#0e1319</color>
+
+    <!-- 主页fragment-->
+    <color name="colorHomeBg">#f8f9f8</color>
+    <color name="colorHomeTitle">#959698</color>
+    <color name="colorHomeDate">#151a20</color>
+    <color name="colorHomeLine">#f2f6f9</color>
+    <color name="colorHomeStatus">#00a8e9</color>
+    <color name="colorHomeMax">#a5a6a8</color>
+    <color name="colorHomeWarn">#f33c58</color>
+
+    <!-- 设置界面 -->
+    <color name="colorSetLine">#f1f2f4</color>
+
+    <!-- 预警记录 -->
+    <color name="colorWarnR">#f55050</color>
+    <color name="colorWarnO">#fd8c39</color>
+    <color name="colorWarnY">#e5d806</color>
+    <color name="colorWarnG">#28e094</color>
+
+    <!-- 流程拟态 -->
+    <color name="colorProcessBg">#0e1319</color>
+    <color name="colorProcessDate">#9b9ca1</color>
+    <color name="colorProcessImgBg">#151a20</color>
+    <color name="colorProcessText">#fefefe</color>
+    <color name="colorProcessP">#98511f</color>
+
+    <!-- 密码设置 -->
+    <color name="colorPasswordHint">#dfe0e0</color>
+    <color name="colorPasswordInput">#707070</color>
+    <color name="colorPasswordSee">#ee7737</color>
+
+    <!-- dialog bg-->
+    <color name="colorDialogBg">#53151A20</color>
+
+</resources>

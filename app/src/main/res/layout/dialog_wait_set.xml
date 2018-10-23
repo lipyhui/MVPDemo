@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  android:layout_width="wrap_content"
+			  android:layout_height="wrap_content"
+			  android:background="@android:color/transparent"
+              >
+
+	<ImageView android:id="@+id/wait_ball"
+			   android:layout_width="114px"
+			   android:layout_height="114px"
+			   android:layout_marginTop="21px"
+	           android:src="@drawable/dialog_wait_ball"/>
+
+	<ImageView android:layout_width="44px"
+			   android:layout_height="44px"
+			   android:layout_marginLeft="91px"
+			   android:src="@drawable/dialog_wait_cir"/>
+
+	<ImageView android:id="@+id/wait_img"
+			   android:layout_width="42px"
+			   android:layout_height="42px"
+			   android:layout_marginLeft="93px"
+			   android:src="@drawable/dialog_wait_loading"/>
+
+</RelativeLayout>

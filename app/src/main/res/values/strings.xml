@@ -1,0 +1,136 @@
+<resources>
+    <string name="app_name">卡瓦制氧机</string>
+
+    <!-- 登录界面 -->
+    <string name="login">登录</string>
+    <string name="project_name">制氧机智能控制系统</string>
+    <string name="company_name">湖南中欣机电科技有限公司</string>
+    <string name="user_name">用户名</string>
+    <string name="password">密码</string>
+    <string name="login_button">登录</string>
+
+    <!-- 主界面侧边 -->
+    <string name="main_no_login_name">用户名</string>
+    <string name="main_home">主页</string>
+    <string name="main_process">流程拟态</string>
+    <string name="main_set">系统设置</string>
+    <string name="main_data">数据显示</string>
+    <string name="main_warn">预警记录</string>
+    <string name="main_no_login_btn">登录账号</string>
+    <string name="main_logged_in_btn">退出登录</string>
+
+    <!-- 主页fragment-->
+    <string name="home_title">系统主页</string>
+    <string name="home_oo_name">含氧量</string>
+    <string name="home_t_name">温度</string>
+    <string name="home_h_name">湿度</string>
+    <string name="home_p_name">压力</string>
+    <string name="home_max">最大值</string>
+    <string name="home_max_temperature">100℃</string>
+    <string name="home_max_percent">100%</string>
+    <string name="home_max_p">20Kpa</string>
+    <string name="home_device_status">设备状态</string>
+    <string name="home_device_time">设备运行时间</string>
+    <string name="home_device_running_time">已运行时间</string>
+    <string name="home_device_all_time">总运行时间</string>
+    <string name="home_p_add">加压</string>
+    <string name="home_p_del">卸压</string>
+    <string name="home_oo_dispersion">弥散氧</string>
+    <string name="home_oo_breath">呼吸氧</string>
+    <string name="home_lamp">灯</string>
+    <string name="home_door">门</string>
+
+    <!-- 设置界面——参数设置 -->
+    <string name="set_title">系统设置</string>
+    <string name="set_param_title">参数设置</string>
+    <string name="set_param_reset_password">重置密码</string>
+    <string name="set_param_p">室内压力设定</string>
+    <string name="set_param_time">运行时间设定</string>
+    <string name="set_param_oo">氧气浓度设定</string>
+    <string name="set_param_change">修改设定</string>
+    <string name="set_param_run">运行参数</string>
+    <string name="set_param_run_time">运行时间:</string>
+    <string name="set_param_run_oo">氧气浓度:</string>
+    <string name="set_param_run_p">室内压力:</string>
+    <string name="set_param_run_h">室内湿度:</string>
+    <string name="set_param_run_t">室内温度:</string>
+
+    <!-- 设置界面——控制设置 -->
+    <string name="set_control_title">控制设置</string>
+
+    <!-- 数据显示 -->
+    <string name="data_title">数据显示</string>
+    <string name="data_sensor">传感器数据采集</string>
+    <string name="data_current">当前数据</string>
+    <string name="data_original">原始数据</string>
+    <string name="data_oo">氧气浓度</string>
+    <string name="data_p">室内压力</string>
+    <string name="data_t">室内温度</string>
+    <string name="data_h">室内湿度</string>
+    <string name="data_tank_p">罐体压力</string>
+    <string name="data_ox_p">氧舱压力</string>
+
+    <!-- 数据显示 -->
+    <string name="warn_title">预警记录</string>
+    <string name="warn_select_time">时间:</string>
+    <string name="warn_search">搜索</string>
+    <string name="warn_time">预警时间</string>
+    <string name="warn_level">预警级别</string>
+    <string name="warn_type">预警类型</string>
+    <string name="warn_remove">消报时间</string>
+    <string name="warn_r">红色预警</string>
+    <string name="warn_o">橙色预警</string>
+    <string name="warn_y">黄色预警</string>
+    <string name="warn_g">绿色预警</string>
+    <string name="warn_p_h">压力高</string>
+    <string name="warn_con_h">浓度高</string>
+    <string name="warn_oo_l">储氧量不足</string>
+    <string name="warn_no_dispel">预警中</string>
+
+    <!-- 流程拟态 -->
+    <string name="process_title">流程拟态</string>
+    <string name="process_dev">设备流程</string>
+    <string name="process_ox">舱室</string>
+    <string name="process_p">压力:</string>
+    <string name="process_con">浓度:</string>
+
+    <!-- 动态密码设置 -->
+    <string name="password_question">密保问题设置:</string>
+    <string name="password_question_hint">请输入您要设置的问题</string>
+    <string name="password_answer_hint">请输入问题的答案</string>
+
+    <string name="password_length">密码为7位数字</string>
+
+    <string name="password_one">首位动态密码设置:</string>
+    <string name="password_one_hint">请输入首位动态密码</string>
+    <string name="password_one_confirm_hint">请再次输入您的密码</string>
+
+    <string name="password_two">第二位动态密码设置:</string>
+    <string name="password_two_hint">请输入第二位动态密码</string>
+    <string name="password_two_confirm_hint">请再次输入您的密码</string>
+
+    <string name="password_succeed_one">首位密码:</string>
+    <string name="password_succeed_two">第二位密码:</string>
+
+    <string name="password_careful">注：后4位动态密码为当前设备时间的“时”和“分”进行输入即可。</string>
+
+    <!-- 动态密码查看 -->
+    <string name="password_see_question">密保问题:</string>
+    <string name="password_see_question_hint">您的密保问题?</string>
+    <string name="password_see_answer">答案:</string>
+    <string name="password_see_answer_hint">密保答案</string>
+    <string name="password_see_confirm">确定</string>
+    <string name="password_see_one">首位密码为:</string>
+    <string name="password_see_two">第二位密码为:</string>
+    <string name="password_see_last_a">后四位密码分别是当前时间的</string>
+    <string name="password_see_last_b">“时”和“分”</string>
+
+    <!-- 需要用到的String资源 -->
+    <!-- 年月日 -->
+    <string name="pickerview_year">年</string>
+    <string name="pickerview_month">月</string>
+    <string name="pickerview_day">日</string>
+    <string name="pickerview_hours">时</string>
+    <string name="pickerview_minutes">分</string>
+    <string name="pickerview_seconds">秒</string>
+</resources>

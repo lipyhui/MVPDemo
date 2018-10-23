@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--两千圈，每圈400-->
+<!--  android:toDegrees="1440000"
+        android:duration="1600000"
+           android:interpolator="@android:anim/linear_interpolator"
+        -->
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <rotate
+        android:fromDegrees="0"
+        android:toDegrees="359"
+        android:duration="600"
+        android:repeatCount="-1"
+        android:pivotX="50%"
+        android:pivotY="50%" />
+</set>
+
+    <!--   android:repeatMode="reverse"-->

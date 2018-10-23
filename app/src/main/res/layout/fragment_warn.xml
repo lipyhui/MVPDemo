@@ -1,0 +1,199 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorHomeBg"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/px_h_22"
+                android:layout_marginLeft="16px"
+                android:layout_marginTop="@dimen/px_h_20"
+                android:layout_weight="1"
+                android:text="@string/warn_title"
+                android:textColor="@color/colorHomeTitle"
+                android:textSize="16px" />
+
+         <!--   <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/warn_select_time"
+                android:textColor="@color/colorHomeTitle"
+                android:textSize="10px" />-->
+
+        <!--    <LinearLayout
+                android:id="@+id/date_start"
+                android:layout_width="@dimen/px_h_150"
+                android:layout_height="@dimen/px_h_30"
+                android:background="@drawable/warn_input_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/date_start_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12px"
+                    android:text="2017.06.09 15:28"
+                    android:textColor="@color/colorHomeTitle"
+                    android:textSize="13px" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12px"
+                    android:src="@drawable/icon_warn_calendar" />
+
+            </LinearLayout>-->
+
+         <!--   <LinearLayout
+                android:id="@+id/date_end"
+                android:layout_width="@dimen/px_h_150"
+                android:layout_height="@dimen/px_h_30"
+                android:background="@drawable/warn_input_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/date_end_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12px"
+                    android:text="2017.06.09 17:10"
+                    android:textColor="@color/colorHomeTitle"
+                    android:textSize="13px" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12px"
+                    android:src="@drawable/icon_warn_calendar" />
+
+            </LinearLayout>-->
+
+
+
+            <ImageView
+                android:id="@+id/warn_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8px"
+                android:src="@drawable/btn_warn_all" />
+
+            <ImageView
+                android:id="@+id/warning"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16px"
+                android:src="@drawable/btn_warning" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_h_46"
+            android:layout_marginLeft="16px"
+            android:layout_marginRight="16px"
+            android:background="@color/colorWhite"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="212px"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="20px">
+
+                <TextView
+                    android:id="@+id/warn_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/warn_time"
+                    android:textColor="@color/colorHomeTitle"
+                    android:textSize="14px" />
+
+                <ImageView
+                    android:id="@+id/warn_time_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:tag="1"
+                    android:layout_marginLeft="6px"
+                    android:src="@drawable/icon_down" />
+
+            </LinearLayout>
+
+            <!--        <LinearLayout
+                android:layout_width="159px"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="20px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/warn_level"
+                    android:textColor="@color/colorHomeTitle"
+                    android:textSize="14px" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6px"
+                    android:src="@drawable/icon_up" />
+
+            </LinearLayout>-->
+
+            <TextView
+                android:layout_width="212px"
+                android:layout_marginLeft="47px"
+                android:layout_marginRight="7px"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="20px"
+                android:text="@string/warn_type"
+                android:textColor="@color/colorHomeTitle"
+                android:textSize="14px" />
+
+            <TextView
+                android:layout_width="160px"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="20px"
+                android:text="@string/warn_remove"
+                android:textColor="@color/colorHomeTitle"
+                android:textSize="14px" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="16px"
+            android:layout_marginRight="16px"
+            android:background="@color/colorHomeBg" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/warn_list_data"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16px"
+            android:layout_marginRight="16px"></android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+</FrameLayout>

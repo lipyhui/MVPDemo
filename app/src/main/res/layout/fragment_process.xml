@@ -1,0 +1,267 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorProcessBg"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/px_h_22"
+                android:layout_marginLeft="16px"
+                android:layout_marginTop="@dimen/px_h_20"
+                android:layout_weight="1"
+                android:text="@string/process_title"
+                android:textColor="@color/colorHomeTitle"
+                android:textSize="16px" />
+
+            <ImageView
+                android:id="@+id/process_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/icon_info" />
+
+            <TextView
+                android:id="@+id/process_plc_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16px"
+                android:layout_marginRight="15px"
+                android:text="2017/06/09 14:30 星期五"
+                android:textColor="@color/colorProcessDate"
+                android:textSize="14px" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/px_h_61"
+            android:background="@color/colorProcessImgBg"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="9px"
+                android:layout_marginRight="9px"
+                android:layout_marginTop="@dimen/px_h_11"
+                android:layout_marginBottom="@dimen/px_h_11"
+                android:background="@drawable/process_bg"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    
+                    <TextView
+                        android:layout_width="86px"
+                        android:layout_height="18px"
+                        android:layout_marginTop="@dimen/px_h_7"
+                        android:layout_marginLeft="9px"
+                        android:gravity="center"
+                        android:background="@drawable/process_dev_bg"
+                        android:textSize="12px"
+                        android:textColor="@color/colorProcessText"
+                        android:text="@string/process_dev"/>
+
+                    <LinearLayout
+                        android:layout_width="97px"
+                        android:layout_height="58px"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/process_ox_bg"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="36px"
+                            android:layout_height="18px"
+                            android:layout_marginTop="@dimen/px_h_7"
+                            android:layout_marginRight="3px"
+                            android:layout_gravity="end"
+                            android:gravity="center"
+                            android:background="@drawable/process_ox_text_bg"
+                            android:textSize="12px"
+                            android:textColor="@color/colorProcessText"
+                            android:text="@string/process_ox"/>
+
+                        <TextView
+                            android:id="@+id/process_p"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8px"
+                            android:layout_marginTop="@dimen/px_h_2"
+                            android:textSize="11px"
+                            android:textColor="@color/colorProcessP"
+                            android:text="压力: 0.0Kpa"/>
+
+                        <TextView
+                            android:id="@+id/process_con"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8px"
+                            android:textSize="11px"
+                            android:textColor="@color/colorProcessP"
+                            android:text="浓度: 0.00%"/>
+                        
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/process_image" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/px_h_143"
+                        android:layout_marginLeft="75px"
+                        android:src="@drawable/process_wang_di" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/px_h_120"
+                        android:layout_marginLeft="132px"
+                        android:src="@drawable/process_wang_guolv" />
+
+                    <ImageView
+                        android:id="@+id/arrow_r_air"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="invisible"
+                        android:layout_marginTop="@dimen/px_h_64"
+                        android:layout_marginLeft="542px"
+                        android:src="@drawable/gas_one" />
+
+                    <ImageView
+                        android:id="@+id/arrow_r_air_two"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="invisible"
+                        android:layout_marginTop="@dimen/px_h_110"
+                        android:layout_marginLeft="542px"
+                        android:src="@drawable/gas_two" />
+
+                    <ImageView
+                        android:id="@+id/arrow_r_air_three"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="invisible"
+                        android:layout_marginTop="@dimen/px_h_155"
+                        android:layout_marginLeft="542px"
+                        android:src="@drawable/gas_three" />
+
+                    <ImageView
+                        android:id="@+id/air_before"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="invisible"
+                        android:layout_marginTop="@dimen/px_h_150"
+                        android:layout_marginLeft="25px"
+                        android:src="@drawable/process_air_before" />
+
+                    <ImageView
+                        android:id="@+id/air_after"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="invisible"
+                        android:layout_marginTop="@dimen/px_h_150"
+                        android:layout_marginLeft="90px"
+                        android:src="@drawable/process_air_after" />
+
+                    <ImageView
+                        android:id="@+id/condenser"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/px_h_182"
+                        android:layout_marginLeft="250px"
+                        android:src="@drawable/process_condenser" />
+
+                <!--    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/px_h_182"
+                        android:layout_marginLeft="190px"
+                        android:src="@drawable/process_condenser_line" />-->
+
+                    <ImageView
+                        android:id="@+id/compress_l"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/px_h_246"
+                        android:layout_marginLeft="150px"
+                        android:src="@drawable/process_yasuji" />
+
+                    <ImageView
+                        android:id="@+id/compress_air_l"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="invisible"
+                        android:layout_marginTop="@dimen/px_h_267"
+                        android:layout_marginLeft="155px"
+                        android:src="@drawable/process_yasuji_cir" />
+
+                    <ImageView
+                        android:id="@+id/compress_r"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/px_h_246"
+                        android:layout_marginLeft="205px"
+                        android:src="@drawable/process_yasuji" />
+
+                    <ImageView
+                        android:id="@+id/compress_air_r"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="invisible"
+                        android:layout_marginTop="@dimen/px_h_267"
+                        android:layout_marginLeft="213px"
+                        android:src="@drawable/process_yasuji_cir" />
+
+                    <ImageView
+                        android:id="@+id/fa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/px_h_77"
+                        android:layout_marginLeft="398px"
+                        android:src="@drawable/process_fa_two" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/px_h_208"
+                        android:layout_marginLeft="545px"
+                        android:src="@drawable/process_yellow_effect" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

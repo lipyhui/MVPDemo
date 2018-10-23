@@ -1,0 +1,818 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorHomeBg"
+    >
+
+    <ImageView
+        android:id="@+id/home_warn_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:background="@drawable/home_warning_bg"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/sys_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/px_h_18"
+                android:layout_marginLeft="16px"
+                android:layout_marginTop="@dimen/px_h_18"
+                android:text="@string/home_title"
+                android:textColor="@color/colorHomeTitle"
+                android:textSize="16px" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1px"
+                android:layout_weight="1"
+                android:gravity="end|right" />
+
+            <ImageView
+                android:id="@+id/home_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/icon_info" />
+
+            <TextView
+                android:id="@+id/home_plc_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16px"
+                android:layout_marginRight="15px"
+                android:text="2017/06/09 14:30 星期五"
+                android:textColor="@color/colorHomeDate"
+                android:textSize="14px" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16px"
+            android:layout_marginRight="16px"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="155px"
+                android:layout_height="150px"
+                android:background="@color/colorWhite"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/px_h_20"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="14px"
+                        android:src="@drawable/icon_cir_o" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8px"
+                        android:text="@string/home_oo_name"
+                        android:textColor="@color/colorHomeTitle"
+                        android:textSize="14px" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="14px"
+                    android:layout_marginTop="@dimen/px_h_20"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="72px"
+                        android:layout_height="72px">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/icon_cir_big_percent" />
+
+                        <TextView
+                            android:id="@+id/home_oo_con"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="0%"
+                            android:textColor="@color/colorHomeDate"
+                            android:textSize="20px" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="right"
+                        android:layout_marginRight="14px"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="6px"
+                            android:layout_height="6px"
+                            android:layout_marginLeft="15px"
+                            android:layout_marginTop="15px"
+                            android:layout_gravity="left"
+                            android:background="@drawable/icon_cir_small_blue" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="19px"
+                            android:text="@string/home_max_percent"
+                            android:textColor="@color/colorHomeDate"
+                            android:textSize="12px" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20px"
+                            android:layout_marginTop="2px"
+                            android:text="@string/home_max"
+                            android:textColor="@color/colorHomeMax"
+                            android:textSize="10px" />
+
+                    <!--    <ImageView
+                            android:id="@+id/home_oo_status"
+                            android:layout_width="46px"
+                            android:layout_height="18px"
+                            android:layout_marginLeft="9px"
+                            android:layout_marginTop="6px"
+                            android:src="@drawable/status_normal" />-->
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="155px"
+                android:layout_height="150px"
+                android:layout_marginLeft="6px"
+                android:background="@color/colorWhite"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/px_h_20"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="14px"
+                        android:src="@drawable/icon_cir_t" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8px"
+                        android:text="@string/home_t_name"
+                        android:textColor="@color/colorHomeTitle"
+                        android:textSize="14px" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="10px"
+                    android:layout_marginRight="10px"
+                    android:layout_marginTop="18px"
+                    android:background="@color/colorHomeLine" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="14px"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/home_t"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="@dimen/px_h_26"
+                        android:layout_weight="1"
+                        android:text="0℃"
+                        android:textColor="@color/colorHomeDate"
+                        android:textSize="20px" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_marginRight="14px">
+
+                        <ImageView
+                            android:layout_width="6px"
+                            android:layout_height="6px"
+                            android:layout_marginLeft="10px"
+                            android:layout_marginTop="14px"
+                            android:background="@drawable/icon_cir_small_blue" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="19px"
+                            android:text="@string/home_max_temperature"
+                            android:textColor="@color/colorHomeDate"
+                            android:textSize="12px" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20px"
+                            android:layout_marginTop="2px"
+                            android:text="@string/home_max"
+                            android:textColor="@color/colorHomeMax"
+                            android:textSize="10px" />
+
+                    <!--    <ImageView
+                            android:id="@+id/home_t_status"
+                            android:layout_width="46px"
+                            android:layout_height="18px"
+                            android:layout_marginLeft="9px"
+                            android:layout_marginTop="6px"
+                            android:src="@drawable/status_normal" />-->
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="155px"
+                android:layout_height="150px"
+                android:layout_marginLeft="6px"
+                android:background="@color/colorWhite"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/px_h_20"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="14px"
+                        android:src="@drawable/icon_cir_h" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8px"
+                        android:text="@string/home_h_name"
+                        android:textColor="@color/colorHomeTitle"
+                        android:textSize="14px" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="14px"
+                    android:layout_marginTop="@dimen/px_h_20"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="72px"
+                        android:layout_height="72px">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/icon_cir_big_percent" />
+
+                        <TextView
+                            android:id="@+id/home_h"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="0%"
+                            android:textColor="@color/colorHomeDate"
+                            android:textSize="20px" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="right"
+                        android:layout_marginRight="14px"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imageView"
+                            android:layout_width="6px"
+                            android:layout_height="6px"
+                            android:layout_marginLeft="15px"
+                            android:layout_marginTop="15px"
+                            android:layout_gravity="left"
+                            android:background="@drawable/icon_cir_small_blue" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="19px"
+                            android:text="@string/home_max_percent"
+                            android:textColor="@color/colorHomeDate"
+                            android:textSize="12px" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20px"
+                            android:layout_marginTop="2px"
+                            android:text="@string/home_max"
+                            android:textColor="@color/colorHomeMax"
+                            android:textSize="10px" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="155px"
+                android:layout_height="150px"
+                android:layout_marginLeft="6px"
+                android:background="@color/colorWhite"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/px_h_20"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="14px"
+                        android:src="@drawable/icon_cir_p" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8px"
+                        android:text="@string/home_p_name"
+                        android:textColor="@color/colorHomeTitle"
+                        android:textSize="14px" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="10px"
+                    android:layout_marginRight="10px"
+                    android:layout_marginTop="18px"
+                    android:background="@color/colorHomeLine" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="14px"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/home_p"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="@dimen/px_h_26"
+                        android:layout_weight="1"
+                        android:text="10.0Kpa"
+                        android:textColor="@color/colorHomeDate"
+                        android:textSize="20px" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="right"
+                        android:layout_marginRight="14px">
+
+                        <ImageView
+                            android:layout_width="6px"
+                            android:layout_height="6px"
+                            android:layout_marginRight="39px"
+                            android:layout_marginTop="14px"
+                            android:background="@drawable/icon_cir_small_blue" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/home_max_p"
+                            android:textColor="@color/colorHomeDate"
+                            android:textSize="12px" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="2px"
+                            android:layout_marginTop="2px"
+                            android:text="@string/home_max"
+                            android:textColor="@color/colorHomeMax"
+                            android:textSize="10px" />
+
+                      <!--  <ImageView
+                            android:id="@+id/home_p_status"
+                            android:layout_width="46px"
+                            android:layout_height="18px"
+                            android:layout_marginLeft="9px"
+                            android:layout_marginTop="6px"
+                            android:src="@drawable/status_abnormal" />-->
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/px_h_50"
+                android:layout_marginTop="@dimen/px_h_6"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="477px"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="16px"
+                    android:background="@color/colorWhite"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/px_h_17"
+                        android:text="@string/home_device_status"
+                        android:textColor="@color/colorHomeTitle"
+                        android:textSize="14px" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_marginLeft="14px"
+                        android:layout_marginRight="14px"
+                        android:layout_marginTop="16px"
+                        android:background="@color/colorHomeLine" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/px_h_28"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/home_p_add"
+                            android:layout_width="159px"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/icon_p_add_stop" />
+
+                        <ImageView
+                            android:id="@+id/home_oo_dispersion"
+                            android:layout_width="159px"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/icon_oo_dispersion_stop" />
+
+                        <ImageView
+                            android:id="@+id/home_oo_breath"
+                            android:layout_width="159px"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/icon_oo_breath_stop" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/px_h_16"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="159px"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/home_p_add"
+                            android:textColor="@color/colorHomeTitle"
+                            android:textSize="16px" />
+
+                        <TextView
+                            android:layout_width="159px"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/home_oo_dispersion"
+                            android:textColor="@color/colorHomeTitle"
+                            android:textSize="16px" />
+
+                        <TextView
+                            android:layout_width="159px"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/home_oo_breath"
+                            android:textColor="@color/colorHomeTitle"
+                            android:textSize="16px" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/px_h_45"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/home_p_del"
+                            android:layout_width="159px"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/icon_p_del_stop" />
+
+                        <ImageView
+                            android:id="@+id/lamp_iv"
+                            android:layout_width="159px"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/icon_lamp_stop" />
+
+                        <ImageView
+                            android:id="@+id/door_iv"
+                            android:layout_width="159px"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/icon_door_stop" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/px_h_16"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="159px"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/home_p_del"
+                            android:textColor="@color/colorHomeTitle"
+                            android:textSize="16px" />
+
+                        <TextView
+                            android:layout_width="159px"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/home_lamp"
+                            android:textColor="@color/colorHomeTitle"
+                            android:textSize="16px" />
+
+                        <TextView
+                            android:layout_width="159px"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/home_door"
+                            android:textColor="@color/colorHomeTitle"
+                            android:textSize="16px" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/px_h_10"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="159px"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="159px"
+                            android:gravity="center_horizontal">
+
+                            <ImageView
+                                android:id="@+id/lamp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:tag="false"
+                                android:src="@drawable/btn_switch_state_close" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="159px"
+                            android:layout_height="match_parent"
+                            android:gravity="center_horizontal">
+
+                            <ImageView
+                                android:id="@+id/door"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:tag="false"
+                                android:src="@drawable/btn_switch_state_close"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="155px"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="6px"
+                    android:background="@color/colorWhite"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/px_h_17"
+                        android:text="@string/home_device_time"
+                        android:textColor="@color/colorHomeTitle"
+                        android:textSize="14px" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_marginLeft="10px"
+                        android:layout_marginRight="10px"
+                        android:layout_marginTop="16px"
+                        android:background="@color/colorHomeLine" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/px_h_22"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/time_below" />
+
+                        <ImageView
+                            android:id="@+id/inner_ring"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/time_middle" />
+
+                        <ImageView
+                            android:id="@+id/outer_ring"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/time_outside" />
+
+                        <TextView
+                            android:id="@+id/home_ran_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="0min"
+                            android:textColor="@color/colorHomeDate"
+                            android:textSize="20px" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/px_h_8"
+                        android:text="@string/home_device_running_time"
+                        android:textColor="@color/colorHomeTitle"
+                        android:textSize="14px" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="24px"
+                            android:layout_height="24px"
+                            android:layout_marginLeft="14px"
+                            android:layout_marginTop="@dimen/px_h_38"
+                            android:src="@drawable/icon_cir_time" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/home_all_run_time"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20px"
+                                android:layout_marginTop="@dimen/px_h_35"
+                                android:text="0min"
+                                android:textColor="@color/colorHomeDate"
+                                android:textSize="12px" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5px"
+                                android:layout_marginTop="@dimen/px_h_4"
+                                android:text="@string/home_device_all_time"
+                                android:textColor="@color/colorHomeTitle"
+                                android:textSize="14px" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/home_warn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/px_h_6"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_warn"/>
+
+                <TextView
+                    android:id="@+id/home_warn_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10px"
+                    android:textSize="14px"
+                    android:textColor="@color/colorHomeWarn"
+                    android:text="@string/warn_oo_l"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/stop_equipment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="@dimen/px_h_20"
+                android:layout_marginRight="@dimen/px_h_63"
+                android:src="@drawable/btn_switch_equipment_state_close" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
